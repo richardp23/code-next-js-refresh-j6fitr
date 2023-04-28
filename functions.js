@@ -6,7 +6,11 @@ render('functions1', () => {
   const translate = (acronym) => {
     if (acronym === 'lol') {
       return 'laugh out loud';
-    } else {
+    } 
+    else if (acronym === 'idk') {
+      return 'i don\'t know';
+    }
+    else {
       throw new Error(`idk how to translate: '${acronym}'`);
     }
   };
@@ -17,7 +21,7 @@ render('functions1', () => {
 // TODO: Write a function that returns the bar property of an object.
 render('functions2', () => {
   const getBar = (object) => {
-
+    return foo.bar
   };
 
   return getBar({ foo: 'foo', bar: 'bar' });
