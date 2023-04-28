@@ -21,7 +21,7 @@ render('functions1', () => {
 // TODO: Write a function that returns the bar property of an object.
 render('functions2', () => {
   const getBar = (object) => {
-    return foo.bar
+    return object.bar
   };
 
   return getBar({ foo: 'foo', bar: 'bar' });
